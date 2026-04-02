@@ -14,8 +14,8 @@
       position: fixed;
       ${a === "bottom-right" ? "right: 20px;" : "left: 20px;"}
       bottom: 20px;
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       background: #FFFFFF;
       color: white;
@@ -31,8 +31,8 @@
       position: fixed;
       ${a === "bottom-right" ? "right: 20px;" : "left: 20px;"}
       bottom: 90px;
-      width: 35d0px;
-      height: 500px;
+      width: 350px;
+      height: 55d0px;
       max-width: calc(100vw - 40px);
       max-height: calc(100vh - 110px);
       z-index: 999998;
