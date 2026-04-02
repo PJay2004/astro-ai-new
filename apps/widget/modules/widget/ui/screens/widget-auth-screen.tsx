@@ -31,7 +31,7 @@ export const WidgetAuthScreen = () => {
 
   const organizationId = useAtomValue(organizationIdAtom);
   const setContactSessionId = useSetAtom(
-    contactSessionIdAtomFamily(organizationId || "")
+    contactSessionIdAtomFamily(organizationId || ""),
   );
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -77,9 +77,11 @@ export const WidgetAuthScreen = () => {
   return (
     <>
       <WidgetHeader>
-        <div className="flex flex-col justify-between gap-y-2 px-2 py-6">
-          <p className="font-semibold text-3xl">Hey There! 👋</p>
-          <p className="font-semibold text-lg">Let&apos;s get you started.</p>
+        <div className="flex flex-col justify-between gap-y-1 px-2 py-4">
+          <p className="font-bold text-3xl">Hello There!</p>
+          <p className="font-medium text-lg italic">
+            How can we assist you today?
+          </p>
         </div>
       </WidgetHeader>
       <Form {...form}>

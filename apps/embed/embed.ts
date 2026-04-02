@@ -58,8 +58,8 @@ import { chatBubbleIcon, closeIcon } from "./icons";
       position: fixed;
       ${position === "bottom-right" ? "right: 20px;" : "left: 20px;"}
       bottom: 20px;
-      width: 60px;
-      height: 60px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
       background: #3b82f6;
       color: white;

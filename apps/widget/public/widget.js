@@ -1,17 +1,21 @@
 (function () {
-  "use strict"; const o = { WIDGET_URL: "http://astro-ai-new-widget.vercel.app", DEFAULT_POSITION: "bottom-right" }, u = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-</svg>`, b = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  "use strict"; const o = { WIDGET_URL: "http://astro-ai-new-widget.vercel.app", DEFAULT_POSITION: "bottom-right" }, u = `
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="red">
+  <path d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+</svg>
+`, b = `
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
   <line x1="18" y1="6" x2="6" y2="18"></line>
   <line x1="6" y1="6" x2="18" y2="18"></line>
-</svg>`; (function () {
+</svg>
+`; (function () {
     let n = null, t = null, e = null, d = !1, r = null, a = o.DEFAULT_POSITION; const c = document.currentScript; if (c) r = c.getAttribute("data-organization-id"), a = c.getAttribute("data-position") || o.DEFAULT_POSITION; else { const i = document.querySelectorAll('script[src*="embed"]'), s = Array.from(i).find(l => l.hasAttribute("data-organization-id")); s && (r = s.getAttribute("data-organization-id"), a = s.getAttribute("data-position") || o.DEFAULT_POSITION) } if (!r) { console.error("Echo Widget: data-organization-id attribute is required"); return } function h() { document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", g) : g() } function g() {
       e = document.createElement("button"), e.id = "echo-widget-button", e.innerHTML = u, e.style.cssText = `
       position: fixed;
       ${a === "bottom-right" ? "right: 20px;" : "left: 20px;"}
       bottom: 20px;
-      width: 60px;
-      height: 60px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
       background: #3b82f6;
       color: white;

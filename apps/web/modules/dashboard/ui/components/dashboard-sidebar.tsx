@@ -58,13 +58,13 @@ const configurationItems = [
   },
 ];
 
-const accountItems = [
-  {
-    title: "Plans & Billing",
-    url: "/billing",
-    icon: CreditCardIcon,
-  },
-];
+// const accountItems = [
+//   {
+//     title: "Plans & Billing",
+//     url: "/billing",
+//     icon: CreditCardIcon,
+//   },
+// ];
 
 export const DashboardSidebar = () => {
   const pathname = usePathname();
@@ -120,7 +120,7 @@ export const DashboardSidebar = () => {
                   isActive={isActive(item.url)}
                   className={cn(
                     isActive(item.url) &&
-                      "bg-gradient-to-b from-sidebar-primary to-[#4E61D3]! text-sidebar-primary-foreground! hover:to-[#4E61D3]/90 hover:text-sidebar-primary-foreground"
+                      "bg-gradient-to-b from-sidebar-primary to-[#ab0707] text-sidebar-primary-foreground! hover:to-[#ab0707]/90 hover:text-sidebar-primary-foreground",
                   )}
                 >
                   <Link href={item.url}>
@@ -147,7 +147,7 @@ export const DashboardSidebar = () => {
                   isActive={isActive(item.url)}
                   className={cn(
                     isActive(item.url) &&
-                      "bg-gradient-to-b from-sidebar-primary to-[#4E61D3]! text-sidebar-primary-foreground! hover:to-[#4E61D3]/90 hover:text-sidebar-primary-foreground"
+                      "bg-gradient-to-b from-sidebar-primary to-[#ab0707] text-sidebar-primary-foreground! hover:to-[#ab0707]/90 hover:text-sidebar-primary-foreground",
                   )}
                 >
                   <Link href={item.url}>
@@ -162,7 +162,7 @@ export const DashboardSidebar = () => {
 
         {/* account */}
 
-        <SidebarGroup>
+        {/* <SidebarGroup>
           <SidebarGroupLabel>Accounts</SidebarGroupLabel>
         </SidebarGroup>
         <SidebarGroupContent className="pl-2! pr-2!">
@@ -175,7 +175,7 @@ export const DashboardSidebar = () => {
                   isActive={isActive(item.url)}
                   className={cn(
                     isActive(item.url) &&
-                      "bg-gradient-to-b from-sidebar-primary to-[#4E61D3]! text-sidebar-primary-foreground! hover:to-[#4E61D3]/90 hover:text-sidebar-primary-foreground"
+                      "bg-gradient-to-b from-sidebar-primary to-[#4E61D3]! text-sidebar-primary-foreground! hover:to-[#4E61D3]/90 hover:text-sidebar-primary-foreground",
                   )}
                 >
                   <Link href={item.url}>
@@ -186,7 +186,7 @@ export const DashboardSidebar = () => {
               </SidebarMenuItem>
             ))}
           </SidebarMenu>
-        </SidebarGroupContent>
+        </SidebarGroupContent> */}
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>
