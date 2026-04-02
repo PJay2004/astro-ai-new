@@ -31,7 +31,7 @@
       position: fixed;
       ${a === "bottom-right" ? "right: 20px;" : "left: 20px;"}
       bottom: 90px;
-      width: 300px;
+      width: 35d0px;
       height: 500px;
       max-width: calc(100vw - 40px);
       max-height: calc(100vh - 110px);
