@@ -14,10 +14,10 @@
       position: fixed;
       ${a === "bottom-right" ? "right: 20px;" : "left: 20px;"}
       bottom: 20px;
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
-      background: #3b82f6;
+      background: white;
       color: white;
       border: none;
       cursor: pointer;
